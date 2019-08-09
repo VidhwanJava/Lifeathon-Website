@@ -28,11 +28,11 @@
 #details {
     width: auto;
     height: 37%;
-    background-color: lightblue;
+    background-color: deepskyblue;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     top: 50%;
     
 
@@ -43,11 +43,11 @@
 #details2 {
     width: auto;
     height: 37%;
-    background-color:aquamarine;
+    background-color:deepskyblue;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 
     
 
@@ -58,11 +58,11 @@
 
     width: auto;
     height: 5%;
-    background-color: white;
-    color: blue;
+    background-color: deepskyblue;
+    color: white;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
    
 }
 
