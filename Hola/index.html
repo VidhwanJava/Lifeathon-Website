@@ -39,42 +39,48 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav navbar-center">
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Home<span class="sr-only"></span></a>
+                    <a class="nav-link" onclick="myFunction('details')">Home<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">Procedure</a>
+                    <a class="nav-link" onclick="myFunction('details2')">Procedure</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Process</a>
+                    <a class="nav-link" onclick="myFunction('footer')">Process</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#team">Conclusion</a>
+                    <a class="nav-link" onclick="myFunction()">Conclusion</a>
                 </li>
 
 
             </ul>
         </div>
     </nav>
-    <div id="details">
+    <div id="details" >
         Content
     </div>
-    <div id="details2">
+    <div id="details2" style="display: none;">
         Content2
     </div>
-    <div id="footer">
+    <div id="footer" style="display: none;">
         Footer
     </div>
-</body>
-<script>
-    function myFunction() {
-        var x = document.getElementById("myDIV");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
 
-</script>
+
+    <script>
+        document.getElementById("details2").display = none;
+        document.getElementById("footer").display = none;
+        function myFunction(id) {
+            var x = document.getElementById(id);
+//            if(document.getElementById()) // complete the function so as to hide the previous element and show the curent id element.
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
 
 </html>
