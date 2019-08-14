@@ -3,11 +3,14 @@
     padding: 0;
     background-color: transparent;
 }
-
+html::-webkit-scrollbar{
+    /* hides the scrollbar, still can scroll */
+    display: none;
+}
 #logoplace {
     text-align: center;
     width: auto;
-    height: 25%;
+    height: 20%;
     background-color: deepskyblue;
     color: white;
     text-transform: uppercase;
@@ -16,19 +19,20 @@
 }
 
 #logo {
-    height: 80%;
+    height: 85%;
     width: 45%;
     background-color: deepskyblue;
-    display: inline;
+    display: inline-block;
     margin-top: 1%;
-    
+    align-content: center;
+    align-self: center;
 }
 
 
 #details {
     width: auto;
-    height:69%;
-    background-color: #0072bc;
+    height:auto;
+    background-color: deepskyblue;
     color: white;
     font-weight: bold;
     text-align: left;
@@ -37,16 +41,13 @@
     padding-left: 20px;
     padding-right: 20px;
 
-
-
-
 }
 
 #details2 {
     width: auto;
-       height:69%;
+       height:auto;
 
-   background-color: #0072bc;
+   background-color: deepskyblue;
     color: white;
     font-weight: bold;
     text-align: left;
@@ -54,17 +55,14 @@
     padding-right: 20px;
     padding-top: 20px;
 
-
-
-
 }
 
 #footer {
 
     width: auto;
-        height:69%;
+    height: auto;
 
-   background-color: #0072bc;
+   background-color: deepskyblue;
     color: white;
     font-weight: bold;
     text-align: left;
@@ -80,9 +78,6 @@
     left: 50%;
     transform: translatex(-50%);
     text-align: center;
-
-
-
 }
 
 
@@ -92,14 +87,39 @@
     font-weight: bold;
     padding-right: 100px;
     padding-left: 100px;
-    color: slategrey;
+    color: rgb(190, 1, 1);
 
 }
 
-.nav-item a:hover {
+.nav-item .hover {
     
-    
-    color:#790000!important;
+    color:deepskyblue;
+
+}
+.page-footer{
+    color: whitesmoke;
+    display: block;
+    align-content: center;
+    font-weight: bolder;
+    height: auto;
+    /* padding: 5%; */
+}
 
 
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #logo, #details, #details2, #footer{
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+  }
+  .nav-item{
+      width: 100%;
+      font-size: 20px;
+      display: block;
+      text-align: center;
+  }
+  .navbar-nav{
+      width: 100%;
+  }
 }
