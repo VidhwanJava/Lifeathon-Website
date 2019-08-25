@@ -1,2 +1,1 @@
-# code
-Code tta
+A simple website for Lifeathon.
